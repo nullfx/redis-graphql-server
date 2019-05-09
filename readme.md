@@ -1,5 +1,3 @@
-![](https://redis.io/images/redis-white.png | height=32) ![](http://codigodelsur.com/wp-content/uploads/2017/11/1_IvCDlfi3vQfgyKO1eFv4jA.png | height=32) ![](https://cdn-images-1.medium.com/max/2560/1*q6lIr0d39_nK9wBuDLbUZw.png | height=32)
-
 # Redis Server
 this is a redis based graph-ql server
 #### Queries
