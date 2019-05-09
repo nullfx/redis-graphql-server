@@ -14,4 +14,6 @@ run
 
 to start the redis docker container, and start the graph-ql front end.  
 
-to access the playground browse to http://localhost:8086/graphql
+to access the playground browse to: 
+
+```http://localhost:8086/graphql```
