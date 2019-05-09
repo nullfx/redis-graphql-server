@@ -4,19 +4,19 @@ this is a redis based graph-ql server
 
 #### Queries
 
-- [get(key: String!): String](https://redis.io/commands/get)
-- [keys(pattern: String!): [String]](https://redis.io/commands/keys)
-- [ttl(key: String!): Int](https://redis.io/commands/ttl)
-- [pttl(key: String!): Int](https://redis.io/commands/pttl)
+- [get ( key: String! ): String](https://redis.io/commands/get)
+- [keys ( pattern: String! ): [String]](https://redis.io/commands/keys)
+- [ttl ( key: String! ): Int](https://redis.io/commands/ttl)
+- [pttl ( key: String! ): Int](https://redis.io/commands/pttl)
 
 #### Mutations
 
-- [set(key: String!, value: String!): Boolean!](https://redis.io/commands/set)
-- [del(key: String!): Boolean!](https://redis.io/commands/del)
-- [incr(key: String!): Boolean!](https://redis.io/commands/INCR)
-- [decr(key: String!): Boolean!](https://redis.io/commands/decr)
-- [expire(key: String!, seconds: Int!): Boolean!](https://redis.io/commands/expire)
-- [rename(key: String!, newkey: String!): Boolean!](https://redis.io/commands/rename)
+- [set ( key: String!, value: String!): Boolean!](https://redis.io/commands/set)
+- [del ( key: String! ): Boolean!](https://redis.io/commands/del)
+- [incr ( key: String! ): Boolean!](https://redis.io/commands/INCR)
+- [decr ( key: String! ): Boolean!](https://redis.io/commands/decr)
+- [expire ( key: String!, seconds: Int! ): Boolean!](https://redis.io/commands/expire)
+- [rename ( key: String!, newkey: String! ): Boolean!](https://redis.io/commands/rename)
 
 ## Usage
 
