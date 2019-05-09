@@ -1,7 +1,7 @@
 # Redis Server
 this is a redis based graph-ql server
 
-# Usage
+## Usage
 to install clone this repository, then run
 
 ```bash
@@ -24,7 +24,7 @@ to access the playground browse to:
 http://localhost:8086/graphql
 ```
 
-# Configuration
+## Configuration
 by default run.sh creates a local redis container and connects to it.  if you have a stand-alone redis server not running locally, you can edit the `.env` file and specify the new server host name or ip, along with whatever port it may be running under
 
 you can specify an alternate graph-ql port here as well
