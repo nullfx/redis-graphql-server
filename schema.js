@@ -1,6 +1,9 @@
 export default `
     type Query {
         get(key: String!): String
+        keys(pattern: String!): [String]
+        ttl(key: String!): Int
+        pttl(key: String!): Int
     }
 
     type Mutation {

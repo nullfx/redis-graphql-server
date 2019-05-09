@@ -1,9 +1,16 @@
 # Redis Server
+
 this is a redis based graph-ql server
+
 #### Queries
+
 - [get(key: String!): String](https://redis.io/commands/get)
+- [keys(pattern: String!): [String]](https://redis.io/commands/keys)
+- [ttl(key: String!): Int](https://redis.io/commands/ttl)
+- [pttl(key: String!): Int](https://redis.io/commands/pttl)
 
 #### Mutations
+
 - [set(key: String!, value: String!): Boolean!](https://redis.io/commands/set)
 - [del(key: String!): Boolean!](https://redis.io/commands/del)
 - [incr(key: String!): Boolean!](https://redis.io/commands/INCR)
@@ -12,6 +19,7 @@ this is a redis based graph-ql server
 - [rename(key: String!, newkey: String!): Boolean!](https://redis.io/commands/rename)
 
 ## Usage
+
 to install clone this repository, then run
 
 ```bash
@@ -45,6 +53,7 @@ http://localhost:8086/graphql
 if you've modified the port ctrl+click the url displayed in the start up console window
 
 ## Configuration
+
 by default run.sh creates a local redis container and connects to it.  if you have a stand-alone redis server not running locally, you can edit the `.env` file and specify the new server host name or ip, along with whatever port it may be running under
 
 you can specify an alternate graph-ql port here as well

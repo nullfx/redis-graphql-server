@@ -7,6 +7,30 @@ export default {
                 console.log(`get: ${e}`)
                 return null
             }
+        },
+        keys: ( _, { pattern }, { client } ) => {
+            try {
+                return client.keysAsync(pattern)
+            } catch(e) {
+                console.log(`keys: ${e}`)
+                return null
+            }
+        },
+        ttl: async ( _, { key }, { client } ) => {
+            try {
+                return await client.ttl(key)
+            } catch(e) {
+                console.log(`get: ${e}`)
+                return null
+            }
+        },
+        pttl: ( _, { key }, { client } ) => {
+            try {
+                return client.pttl(key)
+            } catch(e) {
+                console.log(`get: ${e}`)
+                return null
+            }
         }
     },
     Mutation: {
