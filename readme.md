@@ -1,6 +1,6 @@
 # Redis GraphQL Server
 
-this is a redis based graph-ql server
+this is a redis based graph-ql server using [node redis](https://github.com/noderedis/node_redis) and [Apollo Server](https://github.com/apollographql/apollo-server) and [Babel](https://new.babeljs.io/)
 
 #### Queries
 
