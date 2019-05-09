@@ -1,4 +1,4 @@
-# Redis Server
+# Redis GraphQL Server
 
 this is a redis based graph-ql server
 
