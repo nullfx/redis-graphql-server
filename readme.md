@@ -10,19 +10,21 @@ sh setup.sh
 
 to install any missing dependencies (docker, nodejs, npm, and dependent node modules)
 
-run
+once dependencies have been installed / updated and downloaded you can run the server by running the following command
 
 ```bash
 sh run.sh
 ```
 
-to start the redis docker container, and start the graph-ql front end.  
+which will start the redis docker container (if it hasn't been started), and start the graph-ql front end.  
 
-to access the playground browse to: 
+to access the playground UI browse to
 
 ```html
 http://localhost:8086/graphql
 ```
+
+if you've modified the port ctrl+click the url displayed in the start up console window
 
 ## Configuration
 by default run.sh creates a local redis container and connects to it.  if you have a stand-alone redis server not running locally, you can edit the `.env` file and specify the new server host name or ip, along with whatever port it may be running under
