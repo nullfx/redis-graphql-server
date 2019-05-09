@@ -1,5 +1,5 @@
 {
-  "name": "redis-server",
+  "name": "redis-graphql-server",
   "version": "1.0.0",
   "description": "a sample redis graph-ql server",
   "main": "index.js",
