@@ -28,6 +28,14 @@ sh run.sh
 
 which will start the redis docker container (if it hasn't been started), and start the graph-ql front end.  
 
+alternatively you can run
+
+```bash
+npm start
+```
+
+to run just the graphql server, assuming your redis server is already up and running
+
 to access the playground UI browse to
 
 ```html
