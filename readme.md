@@ -11,7 +11,7 @@ this is a redis based graph-ql server
 
 #### Mutations
 
-- [set ( key: String!, value: String!): Boolean!](https://redis.io/commands/set)
+- [set ( key: String!, value: String! ): Boolean!](https://redis.io/commands/set)
 - [del ( key: String! ): Boolean!](https://redis.io/commands/del)
 - [incr ( key: String! ): Boolean!](https://redis.io/commands/INCR)
 - [decr ( key: String! ): Boolean!](https://redis.io/commands/decr)
