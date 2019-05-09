@@ -1,5 +1,15 @@
 # Redis Server
 this is a redis based graph-ql server
+### Queries
+- [get(key: String!): String](https://redis.io/commands/get)
+
+### Mutations
+- [set(key: String!, value: String!): Boolean!](https://redis.io/commands/set)
+- [del(key: String!): Boolean!](https://redis.io/commands/del)
+- [incr(key: String!): Boolean!](https://redis.io/commands/INCR)
+- [decr(key: String!): Boolean!](https://redis.io/commands/decr)
+- [expire(key: String!, seconds: Int!): Boolean!](https://redis.io/commands/expire)
+- [rename(key: String!, newkey: String!): Boolean!](https://redis.io/commands/rename)
 
 ## Usage
 to install clone this repository, then run

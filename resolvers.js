@@ -28,21 +28,21 @@ export default {
                 return false
             }
         },
-        inc: async ( _, { key }, { client } ) => {
+        incr: async ( _, { key }, { client } ) => {
             try {
                 await client.incr(key)
                 return true
             } catch(e) {
-                console.log(`inc: ${e}`)
+                console.log(`incr: ${e}`)
                 return false
             }
         },
-        dec: async ( _, { key }, { client } ) => {
+        decr: async ( _, { key }, { client } ) => {
             try {
                 await client.decr(key)
                 return true
             } catch(e) {
-                console.log(`dec: ${e}`)
+                console.log(`decr: ${e}`)
                 return false
             }
         },
