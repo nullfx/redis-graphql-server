@@ -33,6 +33,16 @@ Not all commands are implemented, but are documented here:
 
 ## Usage
 
+### Docker
+
+DockerHub repository https://hub.docker.com/r/stevewhitley/redis-graphql
+
+```bash
+docker run -d -p 8181:80 -e "REDIS_SERVERNAME=cloud.redis.server" stevewhitley/redis-graphql
+```
+
+### Development
+
 This module comes with some helper scripts, clone this repository, then run
 
 ```bash
