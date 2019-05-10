@@ -4,19 +4,30 @@ this is a redis based graph-ql server using [node redis](https://github.com/node
 
 #### Queries
 
-- [get ( key: String! ): String](https://redis.io/commands/get)
-- [keys ( pattern: String! ): [String]](https://redis.io/commands/keys)
-- [ttl ( key: String! ): Int](https://redis.io/commands/ttl)
-- [pttl ( key: String! ): Int](https://redis.io/commands/pttl)
+- [get      ( key: String! ): String](https://redis.io/commands/get)
+- [getrange ( key: String!, start: Int!, end: Int! ): String](https://redis.io/commands/getrange)
+- [keys     ( pattern: String! ): [String]!](https://redis.io/commands/keys)
+- [mget     ( keys: [String]! ): String](https://redis.io/commands/mget)
+- [pttl     ( key: String! ): Int!](https://redis.io/commands/pttl)
+- [strlen   ( key: String! ): Int!](https://redis.io/commands/strlen)
+- [ttl      ( key: String! ): Int!](https://redis.io/commands/ttl)
+
 
 #### Mutations
 
-- [set ( key: String!, value: String! ): Boolean!](https://redis.io/commands/set)
-- [del ( key: String! ): Boolean!](https://redis.io/commands/del)
-- [incr ( key: String! ): Boolean!](https://redis.io/commands/INCR)
-- [decr ( key: String! ): Boolean!](https://redis.io/commands/decr)
-- [expire ( key: String!, seconds: Int! ): Boolean!](https://redis.io/commands/expire)
-- [rename ( key: String!, newkey: String! ): Boolean!](https://redis.io/commands/rename)
+- [append   ( key: String!, value: String! ): Int!](https://redis.io/commands/append)
+- [decr     ( key: String! ): Int!](https://redis.io/commands/decr)
+- [decrby   ( key: String!, decrement: Int! ): Int!](https://redis.io/commands/decrby)
+- [del      ( key: String! ): Int!](https://redis.io/commands/del)
+- [expire   ( key: String!, seconds: Int! ): Int!](https://redis.io/commands/expire)
+- [incr     ( key: String! ): Int!](https://redis.io/commands/incr)
+- [incrby   ( key: String!, increment: Int! ): Int!](https://redis.io/commands/incrby)
+- [rename   ( key: String!, newkey: String! ): Boolean!](https://redis.io/commands/rename)
+- [renamenx ( key: String!, newkey: String! ): Int!](https://redis.io/commands/renamenx)
+- [set      ( key: String!, value: String! ): Boolean!](https://redis.io/commands/set)
+- [setex    ( key: String!, seconds: Int!, value: String! ): String!](https://redis.io/commands/setex)
+- [setnx    ( key: String!, value: String! ): Boolean!](https://redis.io/commands/setnx)
+- [setrange ( key: String!, offset: Int!, value: String! ): Int!](https://redis.io/commands/setnx)
 
 ## Usage
 
