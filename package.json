@@ -7,6 +7,10 @@
     "start": "nodemon --exec babel-node index.js"
   },
   "author": "steve",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nullfx/redis-graphql-server"
+  },
   "license": "ISC",
   "devDependencies": {
     "apollo-server-express": "^2.5.0",
