@@ -47,7 +47,7 @@ Once dependencies have been installed / updated and downloaded you can run the s
 sh run.sh
 ```
 
-which will start the redis docker container (if it hasn't been started), and start the graph-ql front end.  
+which will start the redis docker container (if it hasn't been started), and start the graph-ql front end.
 
 Alternatively you can run
 
