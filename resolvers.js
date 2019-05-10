@@ -114,6 +114,22 @@ export default {
                 return -100
             }
         },
+        pexpire: ( _, { key, milliseconds }, { client } ) => {
+            try {
+                return client.pexpireAsync(key, milliseconds)
+            } catch(e) {
+                console.log(`pexpire: ${e}`)
+                return -100
+            }
+        },
+        persist: ( _, { key }, { client } ) => {
+            try {
+                return client.persistAsync(key)
+            } catch(e) {
+                console.log(`persist: ${e}`)
+                return -100
+            }
+        },
         rename: ( _, { key, newkey }, { client } ) => {
             try {
                 return client.renameAsync(key, newkey)
