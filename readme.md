@@ -1,6 +1,6 @@
 # Redis GraphQL Server
 
-this is a redis based graph-ql server using [Node Redis](https://github.com/noderedis/node_redis) and [Apollo Server](https://github.com/apollographql/apollo-server) and [Babel](https://new.babeljs.io/)
+This is a redis based graph-ql server using [Node Redis](https://github.com/noderedis/node_redis) and [Apollo Server](https://github.com/apollographql/apollo-server) and [Babel](https://new.babeljs.io/)
 
 #### Queries
 
@@ -31,15 +31,15 @@ this is a redis based graph-ql server using [Node Redis](https://github.com/node
 
 ## Usage
 
-to install clone this repository, then run
+This module comes with some helper scripts, clone this repository, then run
 
 ```bash
 sh setup.sh
 ```
 
-to install any missing dependencies (docker, nodejs, npm, and dependent node modules)
+to install any missing dependencies (docker, nodejs, npm, and dependent node modules).
 
-once dependencies have been installed / updated and downloaded you can run the server by running the following command
+Once dependencies have been installed / updated and downloaded you can run the server by running the following command
 
 ```bash
 sh run.sh
@@ -47,32 +47,35 @@ sh run.sh
 
 which will start the redis docker container (if it hasn't been started), and start the graph-ql front end.  
 
-alternatively you can run
+Alternatively you can run
 
 ```bash
 npm start
 ```
 
-to run just the graphql server, assuming your redis server is already up and running
+to run the graphql server, assuming your redis server is already up and running / you don't need the docker redis server that run.sh provides.
 
-to access the playground UI browse to
+Once running you can access the GraphQL Playground by browsing to
 
 ```html
 http://localhost:8086/graphql
 ```
 
-if you've modified the port ctrl+click the url displayed in the start up console window
+Note, if you've modified the port in the `.env` file the URL displayed in the console when the app is running will display the location to browse to
 
 ## Configuration
 
-by default run.sh creates a local redis container and connects to it.  if you have a stand-alone redis server not running locally, you can edit the `.env` file and specify the new server host name or ip, along with whatever port it may be running under
+By default `run.sh` creates a local redis container for the server to connect to.  If you have a stand-alone redis server you can edit the `.env` file and specify the new server host name or ip address and port which will allow the server to connect to redis regardless of where its running.
 
-you can specify an alternate graph-ql port here as well
+you can specify an alternate graph-ql server port here as well
 
 ```bash
 # .env
 
+# hostname or ip address of redis server
 REDIS_SERVERNAME=localhost
+# port where redis server is listening
 REDIS_PORT=6379
+# the port where the graphql service will listen
 GRAPHQL_PORT=8086
 ```
