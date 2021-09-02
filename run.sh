@@ -6,4 +6,4 @@ if [ `docker ps | grep -c 'redis-server'` -le 0 ]; then
     docker run -p 6379:6379 --name redis-server -d redis
 fi
 
-npm start
+yarn start
